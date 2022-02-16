@@ -11,17 +11,17 @@
 
         <div class="mb-3">
             <label class="form-label">Nome</label>
-            <input type="nome" name="nome" class="form-control">
+            <input required type="nome" name="nome" class="form-control">
         </div>
 
         <div class="mb-3">
             <label class="form-label">Email address</label>
-            <input type="email" name="email" class="form-control" placeholder="name@example.com">
+            <input required type="email" name="email" class="form-control" placeholder="name@example.com">
         </div>
 
         <div class="mb-3">
             <label class="form-label">Telefone com DDD</label>
-            <input type="number" name="telefone" class="form-control" placeholder="99123456789">
+            <input required type="number" name="telefone" class="form-control" placeholder="99123456789">
         </div>            
         
         <input class="btn btn-primary" type="submit" value="Cadastrar">
