@@ -23,6 +23,8 @@ Route::get('/listarCadastro', [Home::class, 'listarContatos']);
 
 Route::post('/realizarCadastro', [Home::class, 'novoCadastro']);
 
+Route::delete('/deletarCadastro/{id}', [Home::class, 'deletarCadastro']);
+
 
 Route::get('/welcome', function () {
     return view('welcome');

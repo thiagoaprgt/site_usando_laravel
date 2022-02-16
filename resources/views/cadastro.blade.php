@@ -44,8 +44,16 @@
                 <div>
                         
                     <a class="btn btn-info" href="editarCadastro">Editar</a>
-                    <a class="btn btn-danger" href="deletarCadastro">Remover {{$contato->nome}} do seus contatos</a>
-                
+                   
+                    <form action="deletarCadastro/{{$contato->id}}" method="post">
+
+                        @csrf
+                        @method('DELETE')
+
+                        <button type="submit" class="btn btn-danger">Remover {{$contato->nome}} dos seus contatos.</button>
+                    
+                    </form>
+
                 </div>
 
             </div>

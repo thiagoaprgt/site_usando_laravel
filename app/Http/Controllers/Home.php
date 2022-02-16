@@ -36,7 +36,15 @@ class Home extends Controller
 
         return redirect('/');
 
-        // adicionar a diretiva @csrf dentro do formulário, senão fizer isso o Laravel registrar as informações no banco de dados
+        // adicionar a diretiva @csrf dentro do formulário, senão fizer isso o Laravel não registrará as informações no banco de dados.
+
+    }
+
+    public function deletarCadastro($id) {
+        
+        Contato::findOrFail($id)->delete();
+
+        return redirect('/listarCadastro')->with('msg', 'Contato excluído com sucesso');
 
     }
 
