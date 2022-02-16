@@ -5,3 +5,12 @@ section > .cadastro{
     margin: auto;
     
 }
+
+.contatos {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

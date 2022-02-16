@@ -19,10 +19,16 @@ Route::get('/', [Home::class, 'homeTemplate']);
 
 Route::get('/cadastro', [Home::class, 'cadastro']);
 
+Route::get('/listarCadastro', [Home::class, 'listarContatos']);
+
+Route::post('/realizarCadastro', [Home::class, 'novoCadastro']);
+
 
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+
 
 
 
