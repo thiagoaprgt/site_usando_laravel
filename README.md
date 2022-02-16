@@ -1,4 +1,4 @@
-# Após clonar esse repositório é necessário rodar os comandos via terminal, Caso contrário a aplicação não irá funcionar !!!
+# Após clonar esse repositório é necessário rodar os comandos via terminal, caso contrário a aplicação não irá funcionar !!!
 
 
 composer install
