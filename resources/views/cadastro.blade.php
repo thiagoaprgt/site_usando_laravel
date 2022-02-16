@@ -41,6 +41,13 @@
                 <p>Email: {{$contato->email}} </p>
                 <p>WhatsApp: {{$contato->telefone}} </p>
 
+                <div>
+                        
+                    <a class="btn btn-info" href="editarCadastro">Editar</a>
+                    <a class="btn btn-danger" href="deletarCadastro">Remover {{$contato->nome}} do seus contatos</a>
+                
+                </div>
+
             </div>
             
             

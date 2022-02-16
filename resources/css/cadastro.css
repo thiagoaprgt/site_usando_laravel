@@ -7,10 +7,24 @@ section > .cadastro{
 }
 
 .contatos {
-    margin: 20px 0px 20px 0px;
+    margin: 30px 0px 30px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
+}
+
+
+.contatos > div {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contatos > div > a {
+    margin: 0px 10px 0px 0px;
 }
