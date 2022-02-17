@@ -4,6 +4,11 @@ header {
     font-size: 100px;
 }
 
+.msg {
+    text-align: center;
+    background-color: rgb(9, 225, 45);
+}
+
 .carousel-item > div {
     background-color: rgba(19, 18, 18, 0.837);
     

@@ -34,7 +34,7 @@ class Home extends Controller
 
         $contato->save();
 
-        return redirect('/');
+        return redirect('/listarCadastro')->with('msg', 'Novo contato adicionado.');
 
         // adicionar a diretiva @csrf dentro do formulário, senão fizer isso o Laravel não registrará as informações no banco de dados.
 
@@ -44,8 +44,32 @@ class Home extends Controller
         
         Contato::findOrFail($id)->delete();
 
-        return redirect('/listarCadastro')->with('msg', 'Contato excluído com sucesso');
+        return redirect('/listarCadastro')->with('msg', 'Contato excluído com sucesso.');
 
     }
+
+
+    public function editarCadastro(Request $request) {
+        
+        $obj = Contato::findOrFail($request->id);   
+        
+        return view('editarCadastro', ['editar' => $obj]);
+    }
+
+
+    public function atualizarCadastro(Request $request) {
+
+        $obj = Contato::findOrFail($request->id);
+
+        $obj->update( $request->all() );
+
+        return redirect('/listarCadastro')->with('msg', 'Contato atualizado com sucesso.');
+
+        
+
+    }
+
+
+    
 
 }

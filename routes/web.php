@@ -25,6 +25,10 @@ Route::post('/realizarCadastro', [Home::class, 'novoCadastro']);
 
 Route::delete('/deletarCadastro/{id}', [Home::class, 'deletarCadastro']);
 
+Route::post('/editarCadastro', [Home::class, 'editarCadastro']);
+
+Route::put('/atualizarCadastro', [Home::class, 'atualizarCadastro']);
+
 
 Route::get('/welcome', function () {
     return view('welcome');

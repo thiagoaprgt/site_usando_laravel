@@ -42,8 +42,16 @@
                 <p>WhatsApp: {{$contato->telefone}} </p>
 
                 <div>
+                   
+
+                    <form action="editarCadastro" method="post">
+
+                        @csrf
                         
-                    <a class="btn btn-info" href="editarCadastro">Editar</a>
+                        <input type="text" hidden name="id" value="{{$contato->id}}">
+                        <button type="submit" class="btn btn-info">Editar</button>
+                    
+                    </form>
                    
                     <form action="deletarCadastro/{{$contato->id}}" method="post">
 

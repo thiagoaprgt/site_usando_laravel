@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="../resources/css/home.css">
         <link rel="stylesheet" href="../resources/css/cadastro.css">
 
-        
+
 
         <title>@yield('title')</title>
     </head>
@@ -45,8 +45,8 @@
                                 Redes Sociais
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Facebook</a></li>
-                                <li><a class="dropdown-item" href="#">Instagram</a></li>                                
+                                <li><a class="dropdown-item" target="_blank" href="https://github.com/thiagoaprgt">GitHub</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://www.linkedin.com">Linkedin</a></li>                                
                             </ul>
                         </li>
 
@@ -65,6 +65,20 @@
             </div>
 
         </nav>
+
+        <div class="container-fluid">
+
+            <div class="row">
+
+                @if(session('msg'))
+
+                    <p class="msg" >{{session('msg')}}</p>
+
+                @endif
+
+            </div>
+
+        </div>
 
         <section>
             
