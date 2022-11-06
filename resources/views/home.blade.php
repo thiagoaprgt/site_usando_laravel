@@ -22,7 +22,7 @@
             <div class="carousel-item active">
                 <div class="d-block w-100" >
 
-                    <p>Primeiro Slide</p>
+                    <p>Primeiro     Slide</p>
 
                 </div>
             </div>
